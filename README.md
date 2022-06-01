@@ -1,6 +1,3 @@
-# dimosthenis-k.github.io
-Web Technologies school assignment repo.
-
 # SkyHigh Airlines
 
 A simple HTML/CSS airline webpage built as an assignment for the 'Web Technologies' course while studying MSc in Informatics in University of Piraeus.
