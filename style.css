@@ -292,12 +292,6 @@ footer {
   }
 }
 
-/* Responsive Skill Bars */
-@media (max-width: 768px) {
-  .skill-bar {
-    width: 100%;
-  }
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -316,5 +310,13 @@ footer {
   #badge-container {
     font-size: 40px;
     padding-bottom: 10px;
+  }
+
+  .skill-bar {
+    width: 100%;
+  }
+
+  #contact p {
+    text-align: center;
   }
 }
