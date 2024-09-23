@@ -2,9 +2,9 @@
 :root {
   --witch: #44355b;
   --pumpkin: #f18805;
-  --black: #0e1428;
+  --black: #333;
   --zombie: #7b9e89;
-  --toxic: #6bd425;
+  --toxic: #618b25;
   --brownish: #a8ba9a;
 }
 
@@ -36,9 +36,53 @@ main {
 
 /* Header */
 header {
-  background: #333;
+  background: var(--black);
   color: var(--zombie);
   padding: 1rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Typing Effect Styling */
+#dynamic-text {
+  white-space: nowrap; /* Prevents line breaks */
+  overflow: hidden; /* Hides overflow text */
+  display: inline-block;
+  position: relative;
+}
+
+/* Separate Cursor Element */
+/* #dynamic-text::after {
+  content: ""; 
+  border-right: 2px solid var(--pumpkin); 
+  animation: fadeCursor 0.75s ease-in-out infinite; 
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  height: 40px;
+  margin-left: 5px;
+} */
+
+.cursor {
+    border-right: 2px solid var(--pumpkin); /* Cursor color */
+    animation: fadeCursor 1s ease-in-out infinite; /* Cursor fading */
+}
+
+#dynamic-text span {
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out; /* Smoothly fade letters in */
+}
+
+@keyframes fadeCursor {
+  0%,
+  100% {
+    opacity: 1; /* Cursor fully visible */
+  }
+  50% {
+    opacity: 0; /* Cursor invisible */
+  }
 }
 
 nav ul {
@@ -101,11 +145,11 @@ nav ul li a {
 
 #about h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 #about p {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Projects Section */
@@ -132,9 +176,13 @@ nav ul li a {
 /* Contact Section */
 #contact {
   color: var(--zombie);
-  padding-bottom: 25px;
+  font-size: 1.5rem;
   text-align: left;
   background-color: var(--witch);
+}
+
+#contact h2 {
+  padding-bottom: 10px;
 }
 
 #contact a {
@@ -143,16 +191,23 @@ nav ul li a {
 }
 
 #contact a:hover {
-  color: var(--brownish);
+  color: var(--toxic);
+}
+
+#contact p {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 /* Footer */
 footer {
-    padding-top: 20px;
-    padding-bottom: 25px;
-    text-align: center;
-    background: #333;
-    color: var(--zombie);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  text-align: center;
+  background: var(--black);
+  color: var(--toxic);
   position: relative;
 }
 
@@ -256,5 +311,10 @@ footer {
 
   #hero p {
     font-size: 1rem;
+  }
+
+  #badge-container {
+    font-size: 40px;
+    padding-bottom: 10px;
   }
 }
