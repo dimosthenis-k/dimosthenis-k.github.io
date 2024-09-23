@@ -277,9 +277,9 @@ footer {
   color: var(--pumpkin);
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  font-size: 66px;
+  font-size: 60px;
 }
 
 .badge {
