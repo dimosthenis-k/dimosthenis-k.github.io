@@ -7,6 +7,15 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+// Toggle the navigation menu on mobile screens
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  console.log("hamburger clicked");
+  navLinks.classList.toggle("show");
+});
+
 // Skill bar animation using event listeners
 window.addEventListener("scroll", () => {
   const skillsSection = document.querySelector("#skills");
@@ -44,30 +53,24 @@ const pauseBetween = 1000; // Pause before deleting and before starting new word
 const dynamicText = document.getElementById("dynamic-text");
 
 function type() {
-    console.log('isDeleting state ' + isDeleting )
   const currentText = textArray[textIndex];
 
   if (!isDeleting && charIndex < currentText.length) {
     // Typing letters
-    console.log("Entering typing mode");
-    console.log("Typing " + currentText.substring(0, charIndex + 1));
     dynamicText.innerHTML =
-    currentText.substring(0, charIndex + 1) + '<span class="cursor"></span>';
+      currentText.substring(0, charIndex + 1) + '<span class="cursor"></span>';
     charIndex++;
     setTimeout(type, typingSpeed);
   } else if (isDeleting && charIndex > 0) {
     // Deleting letters
-    console.log("Entering deleting mode");
     dynamicText.innerHTML =
       currentText.substring(0, charIndex - 1) + '<span class="cursor"></span>';
     charIndex--;
     setTimeout(type, deletingSpeed);
   } else if (!isDeleting && charIndex === currentText.length) {
-    console.log('Entering set delete mode to true');
     isDeleting = true;
     setTimeout(type, pauseBetween);
   } else if (isDeleting && charIndex === 0) {
-    console.log('Entering set delete mode to false');
     isDeleting = false;
     textIndex = (textIndex + 1) % textArray.length; // Loop Array Elements
     setTimeout(type, typingSpeed);
