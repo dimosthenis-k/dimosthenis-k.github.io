@@ -166,10 +166,47 @@ nav ul li a {
 .stack-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
+  column-gap: 2rem;
+  row-gap: 1rem;
 }
 
+.stack-item {
+  background-color: var(--spooky-purple);
+  color: var(--pumpkin);
+  border-radius: 12px;
+  
+  /* Styling tech logo/ name headers */
+  .stack-item-header {
+    display:flex;
+    align-items: center;
+    flex-flow: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    text-align: right;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    a {
+      text-decoration: none;
+      
+    }
+
+    i {
+      color: var(--blood-red);
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 /* Projects Section */
 #projects {
   background-color: var(--witch);
@@ -229,68 +266,19 @@ footer {
 }
 
 /* Skills Section Styling */
-#skills {
+#stack {
   text-align: left;
   color: var(--zombie);
 }
 
-#skills h2 {
+#stack h2 {
   font-size: 2rem;
   padding-bottom: 10px;
 }
 
-#skills p {
+#stack p {
   font-size: 1.2rem;
-}
-
-.skill {
-  padding-top: 10px;
-  margin-bottom: 20px;
-}
-
-.skill p {
-  font-size: 1.2rem;
-  display: flex;
-  align-items: baseline;
-  justify-content: start;
-  margin-bottom: 10px;
-}
-
-.skill p span {
-  font-size: 1.5rem;
-  margin-right: 10px;
-}
-
-/* Skill Bars */
-.skill-bar {
-  width: 80%;
-  background: var(--black);
-  height: 10px;
-  /* margin: 0 auto; */
-  border-radius: 5px;
-  overflow: hidden;
-  position: relative;
-}
-
-.skill-bar .progress {
-  height: 100%;
-  background-color: #0077cc;
-  width: 0;
-  border-radius: 5px;
-  transition: width 2s ease;
-}
-
-/* Different Progress Bar Colors */
-.progress.html {
-  background-color: #e44d26;
-}
-
-.progress.css {
-  background-color: #2965f1;
-}
-
-.progress.js {
-  background-color: #f7df1e;
+  padding-bottom: 10px;
 }
 
 /* Badges Styling */

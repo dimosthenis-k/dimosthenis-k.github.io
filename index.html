@@ -1,120 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Font embed code -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- fontawesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Dimosthenis Karampinas</title>
-</head>
+  </head>
 
-<body class="nunito-leet">
+  <body class="nunito-leet">
     <header>
-        <nav class="navbar">
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About</a></li>
-                <!-- <li><a href="#projects">Projects</a></li> -->
-                <li><a href="#skills">Stack</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#projects">Projects</a></li> -->
+          <li><a href="#skills">Stack</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <h1>Hey, I'm Dimosthenis</h1>
-            <p id="dynamic-text"></p>
-            <!-- <a href="#projects" class="cta-btn">View My Work</a> -->
-        </section>
+      <section id="hero">
+        <h1>Hey, I'm Dimosthenis</h1>
+        <p id="dynamic-text"></p>
+        <!-- <a href="#projects" class="cta-btn">View My Work</a> -->
+      </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm a Software Engineer, (soon to be) holding a Master's Degree in Informatics.</p>
-        </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I'm a Software Engineer, (soon to be) holding a Master's Degree in
+          Informatics.
+        </p>
+      </section>
 
-        <section id="stack">
-            <div class="stack-container">
-                <div class="stack-item">
-                    
-                </div>
+      <section id="stack">
+        <h2>Tech Stack</h2>
+        <p>Stuff I use in my profession as well as outside of it</p>
+        <div class="stack-container">
+          <div class="stack-item">
+            <div class="stack-item-header">
+                <a href="https://angular.dev"><i class="devicon-angular-plain"></i></a>
+                <h3>Angular</h3>
             </div>
-        </section>
+            <p>Why not react you ask?</p>
+          </div>
+          <div class="stack-item">
+            <div class="stack-item-header">
+                <i class="devicon-angular-plain"></i>
+                <h3>Angular</h3>
+            </div>
+            <p>Why not react you ask?</p>
+          </div>
+          <div class="stack-item">
+            <div class="stack-item-header">
+                <i class="devicon-angular-plain"></i>
+                <h3>Angular</h3>
+            </div>
+            <p>Why not react you ask?</p>
+          </div>
+          <div class="stack-item">
+            <div class="stack-item-header">
+                <i class="devicon-angular-plain"></i>
+                <h3>Angular</h3>
+            </div>
+            <p>Why not react you ask?</p>
+          </div>
+        </div>
+      </section>
 
-        <section id="skills">
-            <h2>Tech Stack</h2>
-            <p>Stuff I use in my profession as well as outside of it</p>
-            <div class="skill">
-                <p><span>💻</span> HTML</p>
-                <div class="skill-bar">
-                    <div class="progress html"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <p><i class="fa-brands fa-java"></i> Java</p>
-                <div class="skill-bar">
-                    <div class="progress css"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <p><span>🖥️</span> JavaScript</p>
-                <div class="skill-bar">
-                    <div class="progress js"></div>
-                </div>
-            </div>
-        </section>
+      <section id="skills"></section>
 
-        <!-- <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of the project. Technologies used: HTML, CSS, JavaScript.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of the project. Technologies used: HTML, CSS, JavaScript.</p>
-            </div>
-        </section> -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Fing me anytime: <a href="mailto:dkarampinas96@gmail.com">dkarampinas96@gmail.com</a>
+        </p>
+      </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>: <a href="mailto:dkarampinas96@gmail.com">dkarampinas96@gmail.com</a>
-            </p>
-        </section>
-
-        <section id="badge-container">
-            <div class="badge">
-                <a href="https://github.com/dimosthenis-k" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div>
-            <div class="badge">
-                <a href="https://www.linkedin.com/in/dkarampinas/" target="_blank"><i
-                        class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-            <div class="badge">
-                <a href="mailto: dkarampinas96@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-        </section>
-
+      <section id="badge-container">
+        <div class="badge">
+          <a href="https://github.com/dimosthenis-k" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+        <div class="badge">
+          <a href="https://www.linkedin.com/in/dkarampinas/" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+        <div class="badge">
+          <a href="mailto: dkarampinas96@gmail.com" target="_blank"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>Hosted with &#127875; on GitHub.</p>
-        <small>&copy; 2024 Dimosthenis Karampinas. All rights reserved.</small>
+      <p>Hosted with &#127875; on GitHub.</p>
+      <small>&copy; 2024 Dimosthenis Karampinas. All rights reserved.</small>
     </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
