@@ -172,6 +172,7 @@ nav ul li a {
   align-items: inherit;
   column-gap: 2rem;
   row-gap: 1rem;
+  padding-bottom: 20px;
 }
 
 .stack-item {
@@ -317,7 +318,7 @@ footer {
   padding-bottom: 10px;
 }
 
-.stack-description {
+.stack-header-description {
   font-size: 1.2rem;
   padding-bottom: 10px;
 }
