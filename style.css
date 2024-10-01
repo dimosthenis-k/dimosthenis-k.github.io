@@ -12,6 +12,7 @@
   --brownish: #a8ba9a;
   --petrol: #212d40;
   --dracula-blue: #7678ed;
+  --scare-cyan: #17a398;
 }
 
 .open-sans-leet {
@@ -130,27 +131,31 @@ nav ul li a {
   color: var(--pumpkin);
 }
 
-.cta-btn {
-  margin-top: 20px;
-  padding: 10px 6px;
-  border-radius: 6px;
-  background-color: #fff;
-  color: #0077cc;
-  border: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-weight: bold;
-  text-decoration: none;
-}
+#resume {
+  color: var(--zombie);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: left;
 
-.cta-btn:hover {
-  background-color: #f4f4f4;
+  h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  a {
+    color: var(--pumpkin);
+    text-decoration: none;
+  }
 }
 
 /* About Section */
 #about {
   padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   text-align: left;
   color: var(--zombie);
 }
@@ -225,29 +230,28 @@ nav ul li a {
 }
 
 .devicon-java-plain {
-  color: var(--toxic);
+  color: var(--zombie);
 }
 
 .devicon-typescript-plain {
-  color: var(--petrol)
+  color: var(--petrol);
 }
 
 .devicon-spring-original {
-  color: var(--zombie)
+  color: var(--zombie);
 }
 
 .devicon-git-plain {
-  color: var(--pumpkin)
+  color: var(--pumpkin);
 }
 
 .devicon-postgresql-plain {
-  color: var(--dracula-blue)
+  color: var(--dracula-blue);
 }
 
 .devicon-docker-plain {
-  color: var(--zombie)
+  color: var(--scare-cyan);
 }
-
 
 /* Projects Section */
 #projects {
@@ -370,7 +374,7 @@ footer {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 36px;
     right: 0;
     background-color: #333;
     width: 100%;
@@ -420,7 +424,15 @@ footer {
     width: 100%;
   }
 
-  #contact p {
-    text-align: center;
+  #contact {
+    p {
+      text-align: start;
+    }
+
+    .email-contact {
+      padding-top: 2rem;
+      text-align: center;
+    }
+
   }
 }
