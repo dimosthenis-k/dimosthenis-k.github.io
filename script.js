@@ -42,14 +42,14 @@ const textArray = [
   "Software Engineer",
   "Documentation Delver",
   "Web Developer",
-  "Tech Enthusiast",
+  "Generally Hyped"
 ];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
 const typingSpeed = 150; // Speed of typing
 const deletingSpeed = 75; // Speed of deleting
-const pauseBetween = 1000; // Pause before deleting and before starting new word
+const pauseBetween = 1200; // Pause before deleting and before starting new word
 const dynamicText = document.getElementById("dynamic-text");
 
 function type() {

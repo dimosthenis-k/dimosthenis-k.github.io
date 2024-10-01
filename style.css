@@ -10,6 +10,8 @@
   --toxic: #618b25;
   --blood-red: #df3a1f;
   --brownish: #a8ba9a;
+  --petrol: #212d40;
+  --dracula-blue: #7678ed;
 }
 
 .open-sans-leet {
@@ -167,7 +169,7 @@ nav ul li a {
   display: flex;
   flex-flow: row wrap;
   justify-content: start;
-  align-items: center;
+  align-items: inherit;
   column-gap: 2rem;
   row-gap: 1rem;
 }
@@ -176,37 +178,76 @@ nav ul li a {
   background-color: var(--spooky-purple);
   color: var(--pumpkin);
   border-radius: 12px;
-  
+  width: 20%;
+
   /* Styling tech logo/ name headers */
   .stack-item-header {
-    display:flex;
-    align-items: center;
+    display: flex;
     flex-flow: row;
     justify-content: space-between;
+    align-items: center;
     font-size: 1.2rem;
-    text-align: right;
     padding-top: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
 
     a {
       text-decoration: none;
-      
     }
 
     i {
-      color: var(--blood-red);
       font-size: 3rem;
     }
   }
 
-  p {
+  .language-tag {
+    font-size: 1rem;
+    align-self: baseline;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: var(--blood-red);
+    border-radius: 6px;
+  }
+
+  .stack-description {
+    font-size: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 }
+
+/* Stack Item Colors */
+.devicon-angularjs-plain {
+  color: var(--blood-red);
+}
+
+.devicon-java-plain {
+  color: var(--toxic);
+}
+
+.devicon-typescript-plain {
+  color: var(--petrol)
+}
+
+.devicon-spring-original {
+  color: var(--zombie)
+}
+
+.devicon-git-plain {
+  color: var(--pumpkin)
+}
+
+.devicon-postgresql-plain {
+  color: var(--dracula-blue)
+}
+
+.devicon-docker-plain {
+  color: var(--zombie)
+}
+
+
 /* Projects Section */
 #projects {
   background-color: var(--witch);
@@ -276,7 +317,7 @@ footer {
   padding-bottom: 10px;
 }
 
-#stack p {
+.stack-description {
   font-size: 1.2rem;
   padding-bottom: 10px;
 }
@@ -364,6 +405,10 @@ footer {
   #badge-container {
     font-size: 40px;
     padding-bottom: 10px;
+  }
+
+  .stack-item {
+    width: 90%;
   }
 
   .badge:hover {
