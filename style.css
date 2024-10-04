@@ -12,7 +12,10 @@
   --brownish: #a8ba9a;
   --petrol: #212d40;
   --dracula-blue: #7678ed;
+  --dracula-purple: #3d348b;
   --scare-cyan: #17a398;
+  --ghastly-purple: #31263e;
+  
 }
 
 .open-sans-leet {
@@ -181,7 +184,7 @@ nav ul li a {
 }
 
 .stack-item {
-  background-color: var(--spooky-purple);
+  background-color: var(--ghastly-purple);
   color: var(--pumpkin);
   border-radius: 12px;
   width: 20%;
@@ -234,7 +237,7 @@ nav ul li a {
 }
 
 .devicon-typescript-plain {
-  color: var(--petrol);
+  color: var(--dracula-purple);
 }
 
 .devicon-spring-original {
@@ -251,6 +254,10 @@ nav ul li a {
 
 .devicon-docker-plain {
   color: var(--scare-cyan);
+}
+
+.devicon-rxjs-plain {
+  color: var(--spooky-purple);
 }
 
 /* Projects Section */
