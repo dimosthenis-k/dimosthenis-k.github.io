@@ -1,9 +1,6 @@
 # dimosthenis-k.github.io
-My CV as a website experiment.
+My CV as a website experiment. I used mainly vanilla stuff, since at this time, using a framework would just add complexity. I plan on making a more refined version using Angular in the near future, look out for it! :telescope:
 
+I tried to give it a halloween aesthetic, since it is just around the corner at the time i'm building it. :ghost:
 
-## Tasks
-- Add favicon (bat/ ghost/ code etc.)
-- Fill About Me, Skills, Contact sections.
-- Host on GitHub Pages
-- Language/ Tool cards should contain a (Framework, Language, DevOps) style badge
+Feel free to use it as a template.
