@@ -142,7 +142,7 @@ nav ul li a {
 
   h2 {
     font-size: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
 
   p {
@@ -165,7 +165,7 @@ nav ul li a {
 
 #about h2 {
   font-size: 2rem;
-  padding-bottom: 10px;
+  padding-bottom: 0.5rem;
 }
 
 #about p {
@@ -290,7 +290,7 @@ nav ul li a {
 }
 
 #contact h2 {
-  padding-bottom: 10px;
+  padding-bottom: 0.5rem;
 }
 
 #contact a {
