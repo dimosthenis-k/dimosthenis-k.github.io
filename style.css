@@ -370,13 +370,6 @@ footer {
   background-color: var(--pumpkin);
 }
 
-/* Responsive Design for Tablets */
-@media (max-width: 1024px) {
-  .stack-item {
-    max-width: 45%;
-  }
-}
-
 /* Responsive Design for Mobile Devices */
 @media (max-width: 768px) {
   .navbar {
