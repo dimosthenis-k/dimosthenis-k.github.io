@@ -15,7 +15,6 @@
   --dracula-purple: #3d348b;
   --scare-cyan: #17a398;
   --ghastly-purple: #31263e;
-  
 }
 
 .open-sans-leet {
@@ -370,8 +369,22 @@ footer {
   background-color: var(--pumpkin);
 }
 
+/* Responsive Design for Tablets */
+@media (max-width: 1024px) {
+  .stack-item {
+    width: 45%;
+  }
+}
+
+/* Responsive Design for Tablets (Landscape Mode) */
+@media (max-width: 1080px) {
+  .stack-item {
+    width: 45%;
+  }
+}
+
 /* Responsive Design for Mobile Devices */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .navbar {
     justify-content: end;
     border-radius: 0px;
@@ -440,6 +453,5 @@ footer {
       padding-top: 2rem;
       text-align: center;
     }
-
   }
 }
